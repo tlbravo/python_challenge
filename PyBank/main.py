@@ -3,7 +3,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-budget_data_csv = os.path.join('python_challenge', 'PyBank', 'Resources', 'budget_data.csv')
+budget_data_csv = os.path.join("PyBank", "Resources", "budget_data.csv")
 
 # Set text file for results
 text_path = "output.txt"
