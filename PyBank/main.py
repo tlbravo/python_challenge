@@ -60,13 +60,13 @@ print(f"Greatest Increase in Profits: {greatest_increase_month} ${greatest_incre
 print(f"Greatest Decrease in Profits: {greatest_decrease_month} ${greatest_decrease}")
 
 #Output results into a text file
-output_file = os.path.join("analysis", "budget_data.txt")
-with open(output_file, "w") as outfile:
+results_file = os.path.join("analysis", "budget_data.txt")
+with open(results_file, "w") as results:
 
-    outfile.write("Financial Analysis\n")
-    outfile.write("-------------------------------\n")
-    outfile.write(f"Total Months: {total_months}\n")
-    outfile.write(f"Total: ${net_total_profit_losses}\n")
-    outfile.write(f"Average Change: {average_change} \n")
-    outfile.write(f"Greatest Increase in Profits: {greatest_increase_month} {greatest_increase}\n")
-    outfile.write(f"Greatest Decrease in Profits: {greatest_decrease_month} {greatest_decrease}\n")
+    results.write("Financial Analysis\n")
+    results.write("-------------------------------\n")
+    results.write(f"Total Months: {total_months}\n")
+    results.write(f"Total: ${net_total_profit_losses}\n")
+    results.write(f"Average Change: {average_change} \n")
+    results.write(f"Greatest Increase in Profits: {greatest_increase_month} {greatest_increase}\n")
+    results.write(f"Greatest Decrease in Profits: {greatest_decrease_month} {greatest_decrease}\n")
